@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block main %}
+<html>
+<head>
+    <title>Profile Page</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='app.css')}}"
+</head>
+<body>
+    <div class="container1">
+    <div class = "start">
+        <div class="pic">
+            <img src={{url_for('static', filename="Capleton.jpg")}}>
+        </div>
+        <div class="info">
+            <h1> david cuthbert</h1>
+            <h3>@theWildUte</h3>
+            <h3>ST Thoman, Jamaica</h3>
+            <h3 class="adjust">{{date}} </h3>
+        </div>
+    </div>
+    <div class ="words">
+    <h2> i am a firm beleiver of my religion, so my only hobbies are web development, spreading the word of the lord and spreading womens legs, if you are a lady and you are interested in any of the above hit me up
+    </h2>
+    <div class="num">
+        <h1> 40</h1>
+        <h1> 7</h1>
+        <h1> 65000000</h1>
+        
+    </div>
+        <div class="num">
+        <h3> Post</h3>
+        <h3> Following</h3>
+        <h3>Followers</h3>
+        
+    </div>
+    <div  class="central">
+        <button class="button">Follow</button>
+    </div>
+    
+    </div>
+    </div>
+        
+</body>
+</html>
+{% endblock %}
